@@ -1,34 +1,40 @@
 function logoHidden(){
-    document.getElementById("C-sharp").setAttribute("class", "hidden");
-    document.getElementById("Javascript").setAttribute("class", "hidden");
-    document.getElementById("Python").setAttribute("class", "hidden");
+
+    document.getElementById("c-sharp").setAttribute("class", "hidden");
+    document.getElementById("javascript").setAttribute("class", "hidden");
+    document.getElementById("python").setAttribute("class", "hidden");
+
+
 }
 
-function submitResult(event){
+ function newResults(event) {
     event.preventDefault();
     logoHidden();
+   
+      let questionOne = document.querySelector("input[name='pick-letter']:checked")
+      let questionTwo = document.querySelector("input[name='color-combo']:checked")
+      let questionThree = document.querySelector("input[name='pick-difficulty']:checked")
+      let questionFour = document.querySelector("input[name='pick-object']:checked")
+      let questionFive = document.querySelector("input[name='pick-time']:checked")
 
 
-      let questionOne = document.querySelector("div#questionOne")
-      let questionTwo = document.querySelector("div#questionTwo")
-      let questionThree = document.querySelector("div#questionThree")
-      let questionFour = document.querySelector("div#questionFour")
-      let questionFive = document.querySelector("div#questionFive")
+    if (questionOne === "C" && questionTwo === "Purple and white" && questionThree === "Easy" && questionFour === "Man" && questionFive === "Mornings") {
+    document.getElementById("c-sharp").removeAttribute("class");
+        }
+    else if (questionOne === "J" && questionTwo === "Black and Yellow" && questionThree === "Intermediate" && questionFour === "Computer" && questionFive === "Afternoons") {
+    document.getElementById("javascript").removeAttribute("class");
+        } 
+    else if (questionOne === "P" && questionTwo === "Light Blue and White" && questionThree === "Difficult" && questionFour === "Snake" && questionFive === "Evenings") {
+    document.getElementById("python").removeAttribute("class");
+        }          
+    else {
+    document.getElementById("python").removeAttribute("class");
+    }
+}
 
+    window.addEventListener("load", function(event){
+        document.getElementById("quiz-button").addEventListener("click", newResults);
         
-    if (questionOne === "C" && questionTwo === "Purple and white" && questionThree === "Easy" && questionFour === "Man" && questionThree === "Mornings") {
-        document.getElementById("C-sharp").removeAttribute("class");
-    }
-    else if (questionOne === "J" && questionTwo === "Black and Yellow" && questionThree === "Intermediate" && questionFour === "Computer" && questionThree === "Afternoons") {
-        document.getElementById("Javascript").removeAttribute("class");
-    } 
-    else if (questionOne === "P" && questionTwo === "Light Blue and White" && questionThree === "Difficult" && questionFour === "Snake" && questionThree === "Evenings") {
-        document.getElementById("Python").removeAttribute("class");
+    
+    });
 
-    }
-
-}
-
-window.onload = function() {
-    document.querySelector("form").onsubmit = submitResult
-}

@@ -10,13 +10,156 @@
 
     <title>Programming Language</title>
 </head>
+
 <body>
     <div>
         <h1>Programming Language Quiz</h1>
         <br>
-        <br>
+
         <p>Are you interested in coding? Please take the test below to see where you should start.</p>
     </div>
+        <br>
+
+<form id="Quiz-questions">
+    <div class="radio">
+        <p class="Letter">
+            Which of the following letters do you prefer?
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="pick-letter" value="pick-letter1">
+            C
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-letter" value="pick-letter2">
+            J
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-letter" value="pick-letter3">
+            P
+            </label>
+        </p>
+    
+        <br>
+        <p class="combination">
+            Which color combination do you prefer?
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="color-combo" value="color-combo1">
+            Purple and white
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="color-combo" value="color-combo2">
+            Black and Yellow
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="color-combo" value="color-combo3">
+            Light Blue and White
+            </label>
+            <br>
+            <br>
+        </p>
+
+        <p class="difficulty">
+            Please choose from one of the following:
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="pick-difficulty" value="difficulty-1">
+            Easy
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-difficulty" value="Difficulty-2">
+            Medium
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-difficulty" value="Difficulty-3">
+            Hard
+            </label>
+            <br>
+            <br>
+        </p>
+
+        <p class="object">
+            Pick an object
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="pick-object" value="object-1">
+            Man
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-object" value="object-2">
+            Computer
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-object" value="object-3">
+            Snake
+            </label>
+            <br>
+            <br>
+        </p>
+
+        <p class="object">
+            What is your favorite time to code?
+        <br>
+        <br>
+        <label>
+            <input type="radio" name="pick-time" value="time-1">
+            Morning
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-time" value="time-2">
+            Afternoon
+            </label>
+            <br>
+        <label>
+            <input type="radio" name="pick-time" value="time-3">
+            Evening
+            </label>
+            <br>
+            <br>
+        </p>
+    </div>
+
+    <button class="submit" type="submitResult" id="quiz-button">Results!!!</button>
+</form>
+
+<div id="responseContainer" class="quiz-responses">
+
+    <div id="c-sharp" class="hidden">
+        <h2>You should learn C-sharp!</h2>
+    </div>
+
+    <div id="javascript" class="hidden">
+        <h2>You should learn Javascript!</h2>        
+    </div>
+
+    <div id="python" class="hidden">
+        <h2>You should learn Python!</h2>
+    </div>  
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
 
 <!-- I wanted a checked box asking i f they want to code or not but it automatically clicks
      
@@ -28,7 +171,8 @@
             <input type="radio" name = "question-0" value="No"> NOOO </form>
         </div>
 -->
-<form id="form-1">
+
+<!-- <form id="form-1">
 
     <div class="question-1" type="radio" name="question-1" id="questionOne">
         <label for="question-1"><h3>Which of the following letters do you prefer?</h3></label>
@@ -37,9 +181,9 @@
             <button class="btn">C</button>
             <button class="btn">J</button>
             <button class="btn">P</button>
-    </div>
-   
-    <div class="question-2" type="radio" name="question-2" id="questionTwo">
+
+
+<div class="question-2" type="radio" name="question-2" id="questionTwo">
         <label for="question-2"><h3>Which color combination do you prefer?</h3></label>
         <br>
         
@@ -75,25 +219,5 @@
             <button class="btn">Mornings</button>
             <button class="btn">Afternoons</button>
             <button class="btn">Evenings</button>
-   
-    </div>
-    <br>
-    <br>
-    <br>
-    <button type="submitResult">Results!!!</button>
-</form>
 
-<div id="C-sharp" class="hidden" alt="Csharp">
-    <img src="csharp.jpeg">
-</div>
-
-<div id="Javascript" class="hidden" alt="Javascript">
-    <img src="javascript.jpeg">
-</div>
-
-<div id="Python" class="hidden" alt="Python">
-    <img src="python.jpeg">
-</div>
-
-</body>
-</html>
+    </div> -->

@@ -23,7 +23,7 @@ This quiz gives the output of the program one should learn based on one's answer
 
 ## Known Bugs
 
-* The main bug is that the page refreshes once every option gets clicked on and no gives no ouput, its WIP so I will try to debug, including the variables and logical operators.
+* The page has to be manually reloaded after hiting submit and getting the result.
 
 ## License
 
