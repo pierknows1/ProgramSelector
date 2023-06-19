@@ -8,6 +8,7 @@
 * HTML
 * Javascript
 * CSS
+* version control - git
 
 # Github Pages
 # https://pierknows1.github.io/ProgramSelector/
