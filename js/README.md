@@ -23,7 +23,7 @@ This quiz gives the output of the program one should learn based on one's answer
 
 ## Known Bugs
 
-* The page has to be manually reloaded after hiting submit and getting the result.
+* no known bugs
 
 ## License
 
