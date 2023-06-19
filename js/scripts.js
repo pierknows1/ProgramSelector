@@ -3,38 +3,42 @@ function logoHidden(){
     document.getElementById("c-sharp").setAttribute("class", "hidden");
     document.getElementById("javascript").setAttribute("class", "hidden");
     document.getElementById("python").setAttribute("class", "hidden");
+    document.getElementById("swift").setAttribute("class", "hidden");
 
 
 }
 
- function newResults(event) {
-    event.preventDefault();
-    logoHidden();
+window.addEventListener("load", function() {
+    let form = document.getElementById("Quiz-questions");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        logoHidden();   
+
+      let questionOne = parseInt(document.getElementById("questionOne").value);
+      let questionTwo = parseInt(document.getElementById("questionTwo").value);
+      let questionThree = parseInt(document.getElementById("questionThree").value);
+      let questionFour = parseInt(document.getElementById("questionFour").value);
+      let questionFive = parseInt(document.getElementById("questionFive").value);
    
-      let questionOne = document.querySelector("input[name='pick-letter']:checked")
-      let questionTwo = document.querySelector("input[name='color-combo']:checked")
-      let questionThree = document.querySelector("input[name='pick-difficulty']:checked")
-      let questionFour = document.querySelector("input[name='pick-object']:checked")
-      let questionFive = document.querySelector("input[name='pick-time']:checked")
+      let newResult = questionOne + questionTwo + questionThree + questionFour + questionFive;
 
 
-    if (questionOne === "C" && questionTwo === "Purple and white" && questionThree === "Easy" && questionFour === "Man" && questionFive === "Mornings") {
-    document.getElementById("c-sharp").removeAttribute("class");
-        }
-    else if (questionOne === "J" && questionTwo === "Black and Yellow" && questionThree === "Intermediate" && questionFour === "Computer" && questionFive === "Afternoons") {
-    document.getElementById("javascript").removeAttribute("class");
-        } 
-    else if (questionOne === "P" && questionTwo === "Light Blue and White" && questionThree === "Difficult" && questionFour === "Snake" && questionFive === "Evenings") {
-    document.getElementById("python").removeAttribute("class");
-        }          
-    else {
-    document.getElementById("python").removeAttribute("class");
+    if (newResult <= 5){
+        document.getElementById("c-sharp").removeAttribute("class", "hidden");
     }
-}
+    else if (newResult <= 10){
+        document.getElementById("python").removeAttribute("class", "hidden");
+    }
+    else if (newResult <=15){
+        document.getElementById("javascript").removeAttribute("class", "hidden");
+    }
 
-    window.addEventListener("load", function(event){
-        document.getElementById("quiz-button").addEventListener("click", newResults);
-        
+
     
-    });
+    const btn = document.querySelector("#refresh");
+    btn.addEventListener("click", function(){
+        location.reload();
+    })
+    })
+});
 

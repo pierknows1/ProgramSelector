@@ -21,133 +21,81 @@
         <br>
 
 <form id="Quiz-questions">
-    <div class="radio">
-        <p class="Letter">
-            Which of the following letters do you prefer?
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="pick-letter" value="pick-letter1">
-            C
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-letter" value="pick-letter2">
-            J
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-letter" value="pick-letter3">
-            P
-            </label>
-        </p>
-    
-        <br>
-        <p class="combination">
-            Which color combination do you prefer?
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="color-combo" value="color-combo1">
-            Purple and white
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="color-combo" value="color-combo2">
-            Black and Yellow
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="color-combo" value="color-combo3">
-            Light Blue and White
-            </label>
-            <br>
-            <br>
-        </p>
-
-        <p class="difficulty">
-            Please choose from one of the following:
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="pick-difficulty" value="difficulty-1">
-            Easy
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-difficulty" value="Difficulty-2">
-            Medium
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-difficulty" value="Difficulty-3">
-            Hard
-            </label>
-            <br>
-            <br>
-        </p>
-
-        <p class="object">
-            Pick an object
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="pick-object" value="object-1">
-            Man
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-object" value="object-2">
-            Computer
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-object" value="object-3">
-            Snake
-            </label>
-            <br>
-            <br>
-        </p>
-
-        <p class="object">
-            What is your favorite time to code?
-        <br>
-        <br>
-        <label>
-            <input type="radio" name="pick-time" value="time-1">
-            Morning
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-time" value="time-2">
-            Afternoon
-            </label>
-            <br>
-        <label>
-            <input type="radio" name="pick-time" value="time-3">
-            Evening
-            </label>
-            <br>
-            <br>
-        </p>
+    <div class="container">
+        <h3>Which of the following letters do you prefer?</h3>
+    <select id="questionOne">
+        <option value="0"></option>
+        <option value="1">C</option>
+        <option value="2">P</option>
+        <option value="3">J</option>
+    </select>
     </div>
 
-    <button class="submit" type="submitResult" id="quiz-button">Results!!!</button>
-</form>
+    <div class="container">
+        <h3>Which color combination do you prefer?</h3>
+    <select id="questionTwo">
+        <option value="0"></option>
+        <option value="1">Purple and white</option>
+        <option value="2">Black and Yellow</option>
+        <option value="3">Light Blue and White</option>
+    </select>
+    </div>
 
-<div id="responseContainer" class="quiz-responses">
+    <div class="container">
+         <h3>Pick an object:</h3>
+     <select id="questionThree">
+        <option value="0"></option>
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="3">Hard</option>
+    </select>
+    </div>
+
+    <div class="container">
+         <h3>Please choose from one of the following:</h3>
+     <select id="questionFour">
+        <option value="0"></option>
+        <option value="1">Man</option>
+        <option value="2">Computer</option>
+        <option value="3">Snake</option>
+    </select>   
+    </div> 
+
+    <div class="container">
+         <h3>What is your favorite time to code?</h3>
+     <select id="questionFive">
+        <option value="0"></option>
+        <option value="1">Morning</option>
+        <option value="2">Afternoon</option>
+        <option value="3">Evening</option>
+    </select>   
+    </div>
+
+    <div id="submit">
+        <h2>Results</h2>
+        <button type="submit">Submit</button>
+    </div>
+    
 
     <div id="c-sharp" class="hidden">
         <h2>You should learn C-sharp!</h2>
     </div>
 
-    <div id="javascript" class="hidden">
-        <h2>You should learn Javascript!</h2>        
+    <div id="python" class="hidden">
+        <h2>You should learn Python!</h2>        
     </div>
 
-    <div id="python" class="hidden">
-        <h2>You should learn Python!</h2>
-    </div>  
+    <div id="javascript" class="hidden">
+        <h2>You should learn Javascript!</h2>
+    </div>
+    
+    <div id="swift" class="hidden">
+        <h2>You should learn Swift!</h2>
+    </div>
+</form>
+<br>
+<button id="refresh">Reload</button>
+
 </div>
 </body>
 </html>
