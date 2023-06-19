@@ -20,6 +20,8 @@ This quiz gives the output of the program one should learn based on one's answer
 
 * _Download the repository "ProgramSelector" to your device._
 * _Open index.html_
+* _Open styles.css_
+* _Open scripts.js_
 
 ## Known Bugs
 
